@@ -1,0 +1,18 @@
+Entrada: ppt_noroeste_shp_CORRUPTO_prueba_T2.nc
+Método: climatología mensual por celda.
+Celdas espaciales del área de estudio: 19926
+Celdas espaciales fuera del polígono: 56580
+Celdas del área con problemas: 99
+NaN inesperados iniciales (registros): 0
+Negativos iniciales (registros): 53460
+Infinitos iniciales (registros; pueden incluir negativos): 0
+Registros inválidos únicos iniciales: 53460
+Registros imputados: 0
+NaN inesperados finales: 53460
+Negativos finales: 0
+Infinitos finales: 0
+Registros pendientes: 53460
+Celdas con pendientes: 99
+Exterior conservado como NaN: True
+Precipitaciones válidas originales conservadas: True
+LIMPIEZA INCOMPLETA: no hay observaciones válidas para algunos pares celda-mes. No se guarda un archivo como LIMPIO. Se requiere otra fuente o un método alternativo explícito.
