@@ -1,17 +1,17 @@
-   # Large data (archived in Zenodo, see data/README.md)
-   *.nc
-   *.tif
-   *.tif.aux.xml
-   *.tfw
-   *.ovr
-   *.shp
-   *.shx
-   *.dbf
-   *.prj
-   *.cpg
-   workdir/
+# Large data (archived in Zenodo, see data/README.md)
+*.nc
+*.tif
+*.tif.aux.xml
+*.tfw
+*.ovr
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+workdir/
 
-   # Python
-   __pycache__/
-   *.pyc
-   .ipynb_checkpoints/
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
