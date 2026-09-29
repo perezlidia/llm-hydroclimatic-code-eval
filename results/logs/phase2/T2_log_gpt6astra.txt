@@ -1,0 +1,19 @@
+Entrada: ppt_noroeste_shp_CORRUPTO_prueba_T2.nc
+M�todo: climatolog�a mensual por celda.
+Celdas espaciales del �rea de estudio: 19926
+Celdas espaciales fuera del pol�gono: 56580
+Celdas del �rea con problemas: 99
+NaN inesperados iniciales (registros): 0
+Negativos iniciales (registros): 53460
+Infinitos iniciales (registros; pueden incluir negativos): 0
+Registros inv�lidos �nicos iniciales: 53460
+Registros imputados: 0
+NaN inesperados finales: 53460
+Negativos finales: 0
+Infinitos finales: 0
+Registros pendientes: 53460
+Celdas con pendientes: 99
+Exterior conservado como NaN: True
+Precipitaciones v�lidas originales conservadas: True
+LIMPIEZA INCOMPLETA: no hay observaciones v�lidas para algunos pares celda-mes. No se guarda un archivo como LIMPIO. Se requiere otra fuente o un m�todo alternativo expl�cito.
+Reporte: D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2\reporte_limpieza_ppt_T2.txt

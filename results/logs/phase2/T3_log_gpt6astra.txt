@@ -1,0 +1,34 @@
+PRECIPITACI�N REGIONAL: 1981�2025
+Celdas dentro del pol�gono: 20,320
+Celdas fuera del pol�gono: 56,186
+Promedio espacial aritm�tico, sin ponderaci�n por superficie.
+
+CLIMATOLOG�A MENSUAL (mm/mes)
+Enero       :      21.32
+Febrero     :      16.45
+Marzo       :      10.57
+Abril       :       4.03
+Mayo        :       2.06
+Junio       :      18.19
+Julio       :      80.87
+Agosto      :      84.18
+Septiembre  :      71.97
+Octubre     :      25.95
+Noviembre   :      16.17
+Diciembre   :      23.73
+
+ACUMULADOS ANUALES � PRIMEROS 5 A�OS (mm/a�o)
+1981:     418.91
+1982:     379.27
+1983:     618.52
+1984:     619.71
+1985:     410.88
+
+ACUMULADOS ANUALES � �LTIMOS 5 A�OS (mm/a�o)
+2021:     382.25
+2022:     373.84
+2023:     230.12
+2024:     208.35
+2025:     351.67
+
+PROMEDIO MULTIANUAL 1981�2025: 375.48 mm/a�o

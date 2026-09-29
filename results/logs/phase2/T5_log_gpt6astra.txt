@@ -1,0 +1,78 @@
+
+PERÍODO: 1981–2025; 45 años completos
+Celdas interiores: 20,320; exteriores excluidas: 56,186
+Promedio espacial: aritmético de celdas
+Media anual histórica: 375.480 mm/año
+Desviación estándar histórica (ddof=0): 83.978 mm/año
+
+REGRESIÓN LINEAL
+Pendiente: -3.177874 (mm/año)/año calendario
+Cambio por década: -31.778745 mm/año por década
+p-valor bilateral: 0.000607363; R²: 0.241531
+Significativa (alfa=0.05): sí
+
+MANN-KENDALL ORIGINAL
+S=-258; Var(S)=10450.000; Z=-2.5141; p=0.0119351
+Resultado: decreciente; significativa (alfa=0.05): sí
+No significativo significa evidencia insuficiente, no ausencia demostrada de tendencia.
+Los p-valores clásicos de ambas pruebas presuponen independencia temporal.
+
+SERIE ANUAL Y ANOMALÍAS
+   Año   Precipitación (mm/año)      Z-score
+  1981                  418.911       0.5172
+  1982                  379.272       0.0452
+  1983                  618.525       2.8942
+  1984                  619.706       2.9082
+  1985                  410.878       0.4215
+  1986                  430.174       0.6513
+  1987                  313.348      -0.7399
+  1988                  351.799      -0.2820
+  1989                  391.431       0.1899
+  1990                  513.062       1.6383
+  1991                  423.421       0.5709
+  1992                  512.284       1.6290
+  1993                  478.894       1.2314
+  1994                  410.329       0.4150
+  1995                  337.417      -0.4532
+  1996                  347.874      -0.3287
+  1997                  392.601       0.2039
+  1998                  340.675      -0.4145
+  1999                  300.866      -0.8885
+  2000                  338.464      -0.4408
+  2001                  341.903      -0.3998
+  2002                  226.212      -1.7775
+  2003                  325.312      -0.5974
+  2004                  356.046      -0.2314
+  2005                  317.956      -0.6850
+  2006                  353.458      -0.2622
+  2007                  360.000      -0.1843
+  2008                  415.623       0.4780
+  2009                  333.268      -0.5027
+  2010                  371.297      -0.0498
+  2011                  274.261      -1.2053
+  2012                  361.156      -0.1706
+  2013                  389.172       0.1630
+  2014                  437.945       0.7438
+  2015                  446.079       0.8407
+  2016                  348.095      -0.3261
+  2017                  339.484      -0.4286
+  2018                  383.258       0.0926
+  2019                  403.887       0.3383
+  2020                  236.024      -1.6606
+  2021                  382.254       0.0807
+  2022                  373.844      -0.0195
+  2023                  230.123      -1.7309
+  2024                  208.346      -1.9902
+  2025                  351.665      -0.2836
+
+3 AÑOS MÁS SECOS (relativos al período; empates por año ascendente)
+2024: 208.346 mm/año; z-score=-1.9902
+2002: 226.212 mm/año; z-score=-1.7775
+2023: 230.123 mm/año; z-score=-1.7309
+
+3 AÑOS MÁS HÚMEDOS (relativos al período; empates por año ascendente)
+1984: 619.706 mm/año; z-score=+2.9082
+1983: 618.525 mm/año; z-score=+2.8942
+1990: 513.062 mm/año; z-score=+1.6383
+
+CSV guardado: D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2\serie_anual_anomalias_ppt_1981_2025.csv

@@ -1,0 +1,2 @@
+Celdas con problemas detectados: 56679
+Celdas con NaN inesperados después de limpieza: 0.0

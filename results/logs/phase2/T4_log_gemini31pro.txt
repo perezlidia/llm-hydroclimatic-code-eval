@@ -1,0 +1,16 @@
+✓ Verificación exitosa: Coordenadas y dimensiones espaciotemporales son idénticas.
+
+============================================================
+  BALANCE HÍDRICO ANUAL - PRIMEROS 5 AÑOS (Promedio del área)
+============================================================
+  • Año 1981: -1120.54 mm/año  -->  Déficit
+  • Año 1982: -1196.30 mm/año  -->  Déficit
+  • Año 1983:  -869.32 mm/año  -->  Déficit
+  • Año 1984:  -861.33 mm/año  -->  Déficit
+  • Año 1985: -1128.54 mm/año  -->  Déficit
+============================================================
+  PROMEDIO MULTIANUAL GLOBAL (1981 - 2025)
+============================================================
+  • Balance Promedio: -1245.93 mm/año
+  • Condición General: Representa un DÉFICIT hídrico regional.
+

@@ -1,0 +1,11 @@
+# Python 3.12 environment used in the study
+numpy
+pandas
+scipy
+xarray
+netCDF4
+rioxarray
+geopandas
+shapely
+matplotlib
+pymannkendall   # used by the Gemini 3.1 Pro T5 script (and optionally by Claude Opus 5.5)

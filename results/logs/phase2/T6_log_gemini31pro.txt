@@ -1,0 +1,13 @@
+--- INICIANDO PRUEBAS DE CARGA SEGURA ---
+
+Ejecutando Caso A: Archivo inexistente...
+  ✅ CAPTURADO CORRECTAMENTE:
+     --> El archivo especificado no existe o la ruta es inválida: 'archivo_falso_1981_2025.nc'
+
+Ejecutando Caso B: Texto renombrado a NetCDF...
+  ✅ CAPTURADO CORRECTAMENTE:
+     --> El archivo 'pet_noroeste_fake.nc' no es un archivo NetCDF válido o está dañado. Detalle técnico: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'scipy', 'rasterio']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+
+--- FIN DE LAS PRUEBAS ---
