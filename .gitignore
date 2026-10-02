@@ -1,4 +1,4 @@
-# Large data (archived in Zenodo, see data/README.md)
+# Large data (distributed as a release asset, see data/README.md)
 *.nc
 *.tif
 *.tif.aux.xml
