@@ -17,9 +17,18 @@ FIG = HERE / "figures"
 FIG.mkdir(exist_ok=True)
 
 LABELS = ["GPT-6 Astra", "Claude Opus 5.5", "Gemini 3.1 Pro"]
-PHASE1 = [143, 134, 82]
-PHASE2 = [143, 140, 117]
-MAXIMUM = 144
+MAXIMUM = 144   # 6 tasks x 24 points
+
+# Scores per task (same values as Table 6 of the chapter and evaluation/scores.csv)
+#          GPT-6 Astra  Claude Opus 5.5  Gemini 3.1 Pro
+SCORES = {
+    "1": {"T1": (23, 24, 16), "T2": (24, 24, 16), "T3": (24, 22, 12),
+          "T4": (24, 23, 12), "T5": (24, 17, 12), "T6": (24, 24, 14)},
+    "2": {"T1": (24, 24, 24), "T2": (24, 24, 11), "T3": (24, 23, 21),   # Gemini T1 scored after repair
+          "T4": (24, 23, 21), "T5": (24, 23, 21), "T6": (24, 24, 20)},
+}
+PHASE1 = [sum(v[i] for v in SCORES["1"].values()) for i in range(3)]
+PHASE2 = [sum(v[i] for v in SCORES["2"].values()) for i in range(3)]
 
 scores_csv = HERE.parent / "evaluation" / "scores.csv"
 if scores_csv.exists():

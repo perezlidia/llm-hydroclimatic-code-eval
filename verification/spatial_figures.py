@@ -242,7 +242,7 @@ def figure_t2():
     layer(axs[0, 0], all_nan, "#5e3c99", "NaN in the whole series", s=6)
     layer(axs[0, 0], neg, "#e66101", "Negative in the whole series", s=14, zorder=3)
     axs[0, 0].legend(loc="lower left", fontsize=9, markerscale=2)
-    axs[0, 0].set_title(f"({letters[0]}) Corrupted input", loc="left", fontsize=12)
+    axs[0, 0].set_title(f"({letters[0]})", loc="left", fontsize=13, fontweight="bold")   # corrupted input
     for k, r in enumerate(results, start=1):
         ax, clean = axs[0, k], r["clean"]
         background(ax, land)
@@ -256,7 +256,8 @@ def figure_t2():
         layer(ax, invalid & ~all_nan & ~neg, "black", "Other invalid", s=10, zorder=3)
         ax.legend(loc="lower left", fontsize=9, markerscale=2)
         state = "detected, no output file" if r["in_memory"] else "after cleaning"
-        ax.set_title(f"({letters[k]}) {r['label']}: {state}", loc="left", fontsize=12)
+        print(f"  panel ({letters[k]}): {r['label']}, {state}")
+        ax.set_title(f"({letters[k]})", loc="left", fontsize=13, fontweight="bold")
 
     ref = err_ideal.where(neg)
     errs = [r["err"].where(neg) for r in results]
@@ -264,8 +265,8 @@ def figure_t2():
     vmax = float(np.nanpercentile(vals, 98)) if vals.size else 1.0
     background(axs[1, 0], land)
     im = points(axs[1, 0], ref, s=12, cmap="viridis", vmin=0, vmax=vmax)
-    axs[1, 0].set_title(f"({letters[ncol]}) Method limit: true climatology\n"
-                        f"mean = {float(ref.mean()):.2f} mm/month", loc="left", fontsize=12)
+    print(f"  panel ({letters[ncol]}): method limit (true climatology), mean = {float(ref.mean()):.2f} mm/month")
+    axs[1, 0].set_title(f"({letters[ncol]})", loc="left", fontsize=13, fontweight="bold")
     for k, (r, err) in enumerate(zip(results, errs), start=1):
         ax = axs[1, k]
         background(ax, land)
@@ -273,11 +274,12 @@ def figure_t2():
             ax.text(0.5, 0.5, "No imputation:\nthe model declined\nto produce a result", ha="center",
                     va="center", transform=ax.transAxes, fontsize=12,
                     bbox=dict(boxstyle="round", facecolor="white", edgecolor="#999999"))
-            ax.set_title(f"({letters[ncol + k]}) {r['label']}: no imputation\n ", loc="left", fontsize=12)
+            print(f"  panel ({letters[ncol + k]}): {r['label']}, no imputation")
+            ax.set_title(f"({letters[ncol + k]})", loc="left", fontsize=13, fontweight="bold")
             continue
         im = points(ax, err, s=12, cmap="viridis", vmin=0, vmax=vmax)
-        ax.set_title(f"({letters[ncol + k]}) {r['label']}: imputation error\n"
-                     f"mean = {float(err.mean()):.2f} mm/month", loc="left", fontsize=12)
+        print(f"  panel ({letters[ncol + k]}): {r['label']}, imputation error, mean = {float(err.mean()):.2f} mm/month")
+        ax.set_title(f"({letters[ncol + k]})", loc="left", fontsize=13, fontweight="bold")
     fig.colorbar(im, ax=list(axs[1, :]), label="Mean |imputed − original| (mm/month)",
                  shrink=0.8, extend="max")
 
@@ -287,10 +289,8 @@ def figure_t2():
         for c in range(ncol):
             ax = axs[row, c]
             ax.set_xlim(xmin, xmax); ax.set_ylim(ymin, ymax)
-            if c > 0:
-                ax.set_ylabel("")
-            if row == 0:
-                ax.set_xlabel("")
+            ax.set_xticks([]); ax.set_yticks([])          # no coordinates
+            ax.set_xlabel(""); ax.set_ylabel("")
     save(fig, "fig4_t2_invalid_values")
 
 

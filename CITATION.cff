@@ -18,10 +18,7 @@ version: "1.0.0"
 date-released: "2026-10-01"
 license: MIT
 repository-code: "https://github.com/perezlidia/llm-hydroclimatic-code-eval"
-identifiers:
-  - type: doi
-    value: "10.5281/zenodo.23045172"
-    description: "Data package archived in Zenodo (input data, model clips and ArcMap reference rasters)"
+url: "https://github.com/perezlidia/llm-hydroclimatic-code-eval/releases/tag/v1.0.0"
 keywords:
   - code generation
   - large language models

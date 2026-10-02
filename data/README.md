@@ -1,7 +1,9 @@
 # Data
 
-Input data are not stored in this Git repository because of their size. They can be obtained as
-follows.
+Because of their size, the data are not stored in the Git tree. The derived data are distributed as
+`llm-hydroclimatic-code-eval_data.zip`, attached to release
+[v1.0.0](https://github.com/perezlidia/llm-hydroclimatic-code-eval/releases/tag/v1.0.0) of this
+repository; the source data can be downloaded from their providers.
 
 ## Source data
 
@@ -10,7 +12,7 @@ follows.
 | TerraClimate monthly `ppt` and `pet`, 1981–2025 (annual files `TerraClimate_<var>_<year>.nc`) | Climatology Lab, https://www.climatologylab.org/terraclimate.html (Abatzoglou et al. 2018). Downloaded on 5 August 2026. |
 | State boundaries of Baja California, Baja California Sur, Sonora and Sinaloa (published as `northwest_mexico_states.shp`, WGS 84, EPSG:4326) | Instituto Nacional de Estadística y Geografía (INEGI), https://www.inegi.org.mx. Downloaded on 5 August 2026. |
 
-## Derived data used in the study (archived in Zenodo: [Zenodo DOI])
+## Derived data used in the study (release v1.0.0 of this repository)
 
 The data package `llm-hydroclimatic-code-eval_data.zip` contains:
 
