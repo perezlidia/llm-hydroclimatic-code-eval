@@ -2,7 +2,8 @@
 
 Supplementary material for the book chapter:
 
-> Pérez Aguilar LY, Lopez Osorio RF, Lopez Sotelo Y, Quevedo Gracía R ([year]) [Chapter title].
+> López-Osorio RF, Pérez-Aguilar LY, López Sotelo Y, Quevedo García R, Quintero Morales MA,
+> Monjardin-Armenta SA, Bernal Guadiana R ([year]) [Chapter title].
 > In: [Book title]. Springer, [pages]. [DOI]
 
 Data package: `llm-hydroclimatic-code-eval_data.zip`, attached to release [v1.0.0](https://github.com/perezlidia/llm-hydroclimatic-code-eval/releases/tag/v1.0.0) of this repository.
