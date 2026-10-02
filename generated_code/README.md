@@ -27,7 +27,14 @@ next to the original:
 | File | Change |
 |---|---|
 | `phase2/t1/t1_gemini31pro_REPAIRED.py` | Removed the unsupported argument `clip_box=False` from `rio.clip()` (it raised `TypeError`). |
-| `phase1/t2/t2_gemini31pro_REPAIRED.py` | Activated the call to the main function, which the delivery left commented out. |
+| `phase1/t2/t2_gemini31pro_REPAIRED.py` | Activated the call to the main function, which the delivery left commented out, with the input and output file names of the test. |
+
+## Files assembled by the authors
+
+| File | Content |
+|---|---|
+| `phase1/t6/t6_gemini31pro_part1_function.py`, `phase1/t6/t6_gemini31pro_part2_tests.py` | Phase 1 T6 delivery of Gemini 3.1 Pro, which came as two separate code blocks (the loading function and its tests). Both are kept unmodified. |
+| `phase1/t6/t6_gemini31pro_COMBINED.py` | The two blocks joined in one file so that they can be run; the only change is that `import os` was moved to the top of the file. |
 
 ## Known execution notes
 

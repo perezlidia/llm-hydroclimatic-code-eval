@@ -42,6 +42,8 @@ INPUT_NAMES = {
     "phase2_pet_polygon_clip_1981_2025.nc": "pet_noroeste_shp_1981_2025.nc",
     "phase2_t2_corrupted_input_ppt.nc": "ppt_noroeste_shp_CORRUPTO_prueba_T2.nc",
     "phase1_ppt_rectangular_clip_1981_2025.nc": "ppt_noroeste_1981_2025.nc",
+    "phase1_pet_rectangular_clip_1981_2025.nc": "pet_noroeste_1981_2025.nc",
+    "phase1_t2_corrupted_input_ppt.nc": "ppt_noroeste_CORRUPTO_prueba_T2.nc",
 }
 for item in sorted(args.data.iterdir()):
     target = out / INPUT_NAMES.get(item.name, item.name)
