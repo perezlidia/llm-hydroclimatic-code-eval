@@ -1,0 +1,41 @@
+# English translation of results/logs/phase2/T3_log_claudeopus55.txt (original console output in Spanish; numbers unchanged)
+Cells inside the polygon: 20320 of 76506
+
+Check of sum behavior with NaN:
+  default sum() over 12 NaN     -> 0.0  (gives 0!)
+  sum(min_count=12) over 12 NaN -> nan
+
+1) Monthly climatology (mm/month), spatial mean 1981-2025:
+   Jan:    21.26
+   Feb:    16.34
+   Mar:    10.46
+   Apr:     3.97
+   May:     2.05
+   Jun:    18.41
+   Jul:    81.50
+   Aug:    85.02
+   Sep:    73.02
+   Oct:    26.19
+   Nov:    16.21
+   Dec:    23.67
+   Sum of the monthly climatology: 378.12 mm/year
+
+Annual total check:
+   Zeros in cells outside the polygon: 0
+   All cells outside the polygon are NaN: True
+
+2) Annual total (mm/year), spatial mean:
+   First 5 years:
+     1981:   421.67
+     1982:   381.27
+     1983:   622.11
+     1984:   624.46
+     1985:   412.88
+   Last 5 years:
+     2021:   384.87
+     2022:   376.21
+     2023:   232.39
+     2024:   209.40
+     2025:   354.69
+
+3) Multi-year mean of the annual total (1981-2025, 45 years): 378.12 mm/year

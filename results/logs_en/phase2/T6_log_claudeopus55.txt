@@ -1,0 +1,13 @@
+# English translation of results/logs/phase2/T6_log_claudeopus55.txt (original console output in Spanish; numbers unchanged)
+
+[TEST] a) Nonexistent file
+  Path: C:\Users\Lidia\AppData\Local\Temp\tmphgtw33op\ppt_noroeste_shp_1981_2025_NO_EXISTE.nc
+  OK -> ArchivoNoEncontradoError was raised as expected.
+  Message: File 'C:\Users\Lidia\AppData\Local\Temp\tmphgtw33op\ppt_noroeste_shp_1981_2025_NO_EXISTE.nc' was not found. Check the path (current working directory: 'D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2').
+
+[TEST] b) Plain text file renamed to .nc
+  Path: C:\Users\Lidia\AppData\Local\Temp\tmphgtw33op\pet_noroeste_shp_1981_2025.nc
+  OK -> FormatoInvalidoError was raised as expected.
+  Message: The file 'pet_noroeste_shp_1981_2025.nc' is not a valid NetCDF: its content does not correspond to NetCDF-3 or NetCDF-4/HDF5 (it may be a file of another type renamed with the .nc extension).
+
+Result: 2/2 tests passed.

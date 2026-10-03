@@ -1,0 +1,62 @@
+# English translation of results/logs/phase2/T6_log_extended_battery.txt (original console output in Spanish; numbers unchanged)
+
+(a) Nonexistent file [prompt]  -> expected: REJECT
+  ChatGPT-6 Astra  reject_ok        [ErrorNetCDF] File does not exist: C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\no_existe.nc
+  Claude           reject_ok        [ArchivoNoEncontradoError] File 'C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\no_existe.nc' was not found. Check the path (current working directory: 'D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2').
+  Gemini 3.1 Pro   reject_ok        [FileNotFoundError] The specified file does not exist or the path is invalid: 'C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\no_existe.nc'
+
+(b) Plain text renamed to .nc [prompt]  -> expected: REJECT
+  ChatGPT-6 Astra  reject_ok        [ErrorNetCDF] Could not open or read 'texto.nc' as climate NetCDF. The content may not be valid NetCDF, may be incomplete or corrupted, may not be accessible, or may contain metadata that cannot be decoded. A text file renamed to .nc is not a NetCDF.
+  Claude           reject_ok        [FormatoInvalidoError] The file 'texto.nc' is not a valid NetCDF: its content does not correspond to NetCDF-3 or NetCDF-4/HDF5 (it may be a file of another type renamed with the .nc extension).
+  Gemini 3.1 Pro   reject_leak      [ValueError] The file 'texto.nc' is not a valid NetCDF file or is corrupted. Technical detail: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'scipy', 'rasterio']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+
+(c) Valid NetCDF-4 [positive control]  -> expected: ACCEPT
+  ChatGPT-6 Astra  accept_ok        [-] (file loaded)
+  Claude           accept_ok        [-] (file loaded)
+  Gemini 3.1 Pro   accept_ok        [-] (file loaded)
+
+(d) Valid classic NetCDF-3 [positive control]  -> expected: ACCEPT
+  ChatGPT-6 Astra  accept_ok        [-] (file loaded)
+  Claude           accept_ok        [-] (file loaded)
+  Gemini 3.1 Pro   accept_ok        [-] (file loaded)
+
+(e) Actual study file [positive control]  -> expected: ACCEPT
+  ChatGPT-6 Astra  accept_ok        [-] (file loaded)
+  Claude           accept_ok        [-] (file loaded)
+  Gemini 3.1 Pro   accept_ok        [-] (file loaded)
+
+(f) Empty file (0 bytes)  -> expected: REJECT
+  ChatGPT-6 Astra  reject_ok        [ErrorNetCDF] Could not open or read 'vacio.nc' as climate NetCDF. The content may not be valid NetCDF, may be incomplete or corrupted, may not be accessible, or may contain metadata that cannot be decoded. A text file renamed to .nc is not a NetCDF.
+  Claude           reject_ok        [FormatoInvalidoError] The file 'vacio.nc' is empty (0 bytes).
+  Gemini 3.1 Pro   reject_leak      [ValueError] The file 'vacio.nc' is not a valid NetCDF file or is corrupted. Technical detail: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'scipy', 'rasterio']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+
+(g) Folder with .nc extension  -> expected: REJECT
+  ChatGPT-6 Astra  reject_ok        [ErrorNetCDF] The path does not correspond to a file: C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\carpeta.nc
+  Claude           reject_ok        [ArchivoNoEncontradoError] The path 'C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\carpeta.nc' exists but is not a file (is it a directory?).
+  Gemini 3.1 Pro   reject_ok        [FileNotFoundError] The specified file does not exist or the path is invalid: 'C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\carpeta.nc'
+
+(h) Valid NetCDF without 'ppt' or 'pet'  -> expected: REJECT
+  ChatGPT-6 Astra  reject_ok        [ErrorNetCDF] The file 'sin_variable.nc' does not contain any data variable named 'ppt' or 'pet'. Variables found: tmax.
+  Claude           reject_ok        [EstructuraInvalidaError] The file 'sin_variable.nc' does not contain any of the expected variables ['ppt', 'pet']. Variables found: ['tmax'].
+  Gemini 3.1 Pro   reject_ok        [ValueError] The file 'sin_variable.nc' does not contain any expected climate variable ('ppt' or 'pet'). Variables found: ['tmax']
+
+(i) Valid NetCDF without 'time' dimension  -> expected: REJECT
+  ChatGPT-6 Astra  reject_ok        [ErrorNetCDF] The file 'sin_time.nc' does not have the required dimensions: time. Dimensions found: lat, lon.
+  Claude           reject_ok        [EstructuraInvalidaError] The file 'sin_time.nc' does not have the required dimensions ['lat', 'lon', 'time']. Missing: ['time']. Dimensions found: ['lat', 'lon'].
+  Gemini 3.1 Pro   reject_ok        [ValueError] The file 'sin_time.nc' does not meet the dimensional structure. The following dimensions are missing: ['time']. Dimensions found: ['lon', 'lat']
+
+(j) NetCDF-4 truncated in half  -> expected: REJECT
+  ChatGPT-6 Astra  reject_ok        [ErrorNetCDF] Could not open or read 'truncado.nc' as climate NetCDF. The content may not be valid NetCDF, may be incomplete or corrupted, may not be accessible, or may contain metadata that cannot be decoded. A text file renamed to .nc is not a NetCDF.
+  Claude           reject_leak      [FormatoInvalidoError] The file 'truncado.nc' looks like NetCDF but could not be opened (corrupted, truncated, or missing the netCDF4/h5netcdf engine?). Detail: OSError: [Errno -101] NetCDF: HDF error: 'C:\\Users\\Lidia\\AppData\\Local\\Temp\\t6_4suqzlc0\\truncado.nc'
+  Gemini 3.1 Pro   reject_leak      [ValueError] The file 'truncado.nc' is not a valid NetCDF file or is corrupted. Technical detail: [Errno -101] NetCDF: HDF error: 'C:\\Users\\Lidia\\AppData\\Local\\Temp\\t6_4suqzlc0\\truncado.nc'
+
+SUMMARY (correct / cases)
+  ChatGPT-6 Astra  10/10 correct; 0 with internal detail exposed
+  Claude           10/10 correct; 1 with internal detail exposed
+  Gemini 3.1 Pro   10/10 correct; 3 with internal detail exposed
+
+Figure saved to D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2\figuras\fig6_T6_robustez.png

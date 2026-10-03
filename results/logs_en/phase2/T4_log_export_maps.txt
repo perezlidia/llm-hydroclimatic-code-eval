@@ -1,0 +1,35 @@
+# English translation of results/logs/phase2/T4_log_export_maps.txt (original console output in Spanish; numbers unchanged)
+[OK] Time and lat/lon coordinates identical in both datasets.
+     time=540 (1981-01 to 2025-12), lat=246, lon=311
+     Cells inside the study area: 20320 (outside: 56186)
+
+Annual water balance (P - PET), area-weighted spatial mean
+--------------------------------------------------------------
+  1981:    -1116.9 mm/year  -> water DEFICIT
+  1982:    -1194.6 mm/year  -> water DEFICIT
+  1983:     -865.7 mm/year  -> water DEFICIT
+  1984:     -855.7 mm/year  -> water DEFICIT
+  1985:    -1126.1 mm/year  -> water DEFICIT
+--------------------------------------------------------------
+Multi-year mean 1981-2025 (45 years): -1242.6 mm/year
+Interpretation: water DEFICIT in the study area (PET exceeds precipitation).
+Saved D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2\T4_claude.nc  dims={'lat': 246, 'lon': 311}
+Saved D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2\T4_chatgpt.nc  dims={'lat': 246, 'lon': 311}
+✓ Verification successful: Spatiotemporal coordinates and dimensions are identical.
+
+============================================================
+  ANNUAL WATER BALANCE - FIRST 5 YEARS (Area mean)
+============================================================
+  • Year 1981: -1120.54 mm/year  -->  Deficit
+  • Year 1982: -1196.30 mm/year  -->  Deficit
+  • Year 1983:  -869.32 mm/year  -->  Deficit
+  • Year 1984:  -861.33 mm/year  -->  Deficit
+  • Year 1985: -1128.54 mm/year  -->  Deficit
+============================================================
+  GLOBAL MULTI-YEAR MEAN (1981 - 2025)
+============================================================
+  • Mean Balance: -1245.93 mm/year
+  • General Condition: Represents a regional water DEFICIT.
+
+Saved D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2\T4_gemini.nc  dims={'lat': 246, 'lon': 311}
+Done: now run  python mapas_comparativos.py

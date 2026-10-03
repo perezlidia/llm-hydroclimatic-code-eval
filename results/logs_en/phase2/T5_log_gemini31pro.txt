@@ -1,0 +1,27 @@
+# English translation of results/logs/phase2/T5_log_gemini31pro.txt (original console output in Spanish; numbers unchanged)
+==================================================
+     ANNUAL PRECIPITATION ANALYSIS (1981-2025)
+==================================================
+Historical regional mean: 375.48 mm/year
+Historical standard deviation: 84.93 mm/year
+
+--- 1. Linear Trend (OLS) ---
+Slope: -3.18 mm/year
+R²: 0.2415
+p-value: 0.0006 (Significant (p < 0.05))
+
+--- 2. Mann-Kendall Test ---
+Trend: decreasing
+MK p-value: 0.0119
+Significance (alpha=0.05): True
+
+--- 3. Driest Years (Standardized Anomalies) ---
+Year: 2024 | Total: 208.3 mm | Z-Score: -1.97
+Year: 2002 | Total: 226.2 mm | Z-Score: -1.76
+Year: 2023 | Total: 230.1 mm | Z-Score: -1.71
+
+--- 4. Wettest Years (Standardized Anomalies) ---
+Year: 1984 | Total: 619.7 mm | Z-Score: 2.88
+Year: 1983 | Total: 618.5 mm | Z-Score: 2.86
+Year: 1990 | Total: 513.1 mm | Z-Score: 1.62
+==================================================

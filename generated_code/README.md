@@ -3,7 +3,8 @@
 **These files are kept exactly as the models delivered them.** Their comments, identifiers and
 console messages are in Spanish because the prompts were written in Spanish; they have not been
 translated or edited, since any change would alter the object of study. English translations of
-the prompts are in `../prompts/`.
+the prompts are in `../prompts/`, and English translations of these scripts are in
+`../generated_code_en/`.
 
 ## Naming
 

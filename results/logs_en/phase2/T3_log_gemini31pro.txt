@@ -1,0 +1,37 @@
+# English translation of results/logs/phase2/T3_log_gemini31pro.txt (original console output in Spanish; numbers unchanged)
+============================================================
+1. HISTORICAL MONTHLY CLIMATOLOGY (mm/month):
+============================================================
+  January     :    21.32 mm
+  February    :    16.45 mm
+  March       :    10.57 mm
+  April       :     4.03 mm
+  May         :     2.06 mm
+  June        :    18.19 mm
+  July        :    80.87 mm
+  August      :    84.18 mm
+  September   :    71.97 mm
+  October     :    25.95 mm
+  November    :    16.17 mm
+  December    :    23.73 mm
+
+============================================================
+2. ANNUAL PRECIPITATION TOTAL (mm/year):
+============================================================
+ First 5 years:
+  Year 1981:   418.91 mm
+  Year 1982:   379.27 mm
+  Year 1983:   618.53 mm
+  Year 1984:   619.71 mm
+  Year 1985:   410.88 mm
+ ...
+ Last 5 years:
+  Year 2021:   382.25 mm
+  Year 2022:   373.84 mm
+  Year 2023:   230.12 mm
+  Year 2024:   208.35 mm
+  Year 2025:   351.67 mm
+
+============================================================
+3. MULTI-YEAR MEAN (1981-2025): 375.48 mm/year
+============================================================

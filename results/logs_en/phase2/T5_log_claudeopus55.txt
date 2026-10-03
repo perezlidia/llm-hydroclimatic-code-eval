@@ -1,0 +1,43 @@
+# English translation of results/logs/phase2/T5_log_claudeopus55.txt (original console output in Spanish; numbers unchanged)
+======================================================================
+Regional annual precipitation — Northwest Mexico
+======================================================================
+Variable 'ppt' (mm); period 1981-01 to 2025-12
+Grid: 246 x 311 = 76506 cells; inside the polygon: 20320–20320 per year.
+Mean bias that sum() without min_count would have produced: -278.5 mm/year
+
+[1] Annual series: 45 years (1981-2025), mean 378.1 mm/year
+
+[2] Linear trend (OLS)
+    Slope     : -3.183 mm/year (-31.83 mm/decade) ± 0.864
+    p-value   : 0.0006 (significant at α=0.05)
+    R²        : 0.2399
+    Diagnostics: Durbin-Watson = 1.38 (≈2 no autocorrelation); Shapiro-Wilk residuals p = 0.4814
+
+[3] Mann-Kendall (original, with tie correction)
+    S = -258, Z = -2.514, tau = -0.261, p-value = 0.0119
+    Result: DECREASING (α=0.05)
+    Sen's slope: -2.295 mm/year (-22.95 mm/decade)
+    Lag-1 autocorrelation = 0.473 (threshold ±0.292 at 95 %)
+    Hamed-Rao (corrects autocorrelation): Z = -2.514, p = 0.0119 → decreasing
+
+[4] Standardized anomalies
+    Mean = 378.1 mm/year, standard deviation (ddof=1) = 85.4 mm/year
+    Series normality: Shapiro-Wilk p = 0.0087; skewness = +0.76
+    WARNING: non-normal series; the z-score is useful for ranking years, but not for assigning probabilities (consider SPI-12).
+
+[5] Three DRIEST years
+      ppt_anual_mm  z_score  anomalia_mm
+anio
+2024         209.4    -1.98       -168.7
+2002         227.6    -1.76       -150.5
+2023         232.4    -1.71       -145.7
+
+    Three WETTEST years
+      ppt_anual_mm  z_score  anomalia_mm
+anio
+1984         624.5     2.89        246.3
+1983         622.1     2.86        244.0
+1990         517.0     1.63        138.9
+
+Full series saved to: serie_anual_ppt_noroeste.csv

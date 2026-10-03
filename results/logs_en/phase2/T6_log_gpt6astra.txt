@@ -1,0 +1,9 @@
+# English translation of results/logs/phase2/T6_log_gpt6astra.txt (original console output in Spanish; numbers unchanged)
+
+a) Nonexistent file
+[OK] Controlled error: File does not exist: C:\Users\Lidia\AppData\Local\Temp\pruebas_netcdf_suhqoldz\archivo_que_no_existe.nc
+
+b) Plain text with .nc extension
+[OK] Controlled error: Could not open or read 'texto_renombrado.nc' as climate NetCDF. The content may not be valid NetCDF, may be incomplete or corrupted, may not be accessible, or may contain metadata that cannot be decoded. A text file renamed to .nc is not a NetCDF.
+
+Result: 2/2 tests correct.

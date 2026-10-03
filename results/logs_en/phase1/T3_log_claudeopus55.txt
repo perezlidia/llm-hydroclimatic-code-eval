@@ -1,0 +1,33 @@
+# English translation of results/logs/phase1/T3_log_claudeopus55.txt (original console output in Spanish; numbers unchanged)
+Units declared in the file: mm
+
+Monthly climatology 1981-2025 (regional mean, mm/month)
+  Jan:    21.22
+  Feb:    15.29
+  Mar:    10.68
+  Apr:     5.11
+  May:     5.32
+  Jun:    30.24
+  Jul:    94.12
+  Aug:    92.75
+  Sep:    74.86
+  Oct:    29.76
+  Nov:    16.99
+  Dec:    23.43
+
+Annual total - first 5 years (mm/year)
+  1981:   513.06
+  1982:   423.43
+  1983:   575.63
+  1984:   654.82
+  1985:   492.01
+
+Annual total - last 5 years (mm/year)
+  2021:   423.03
+  2022:   428.40
+  2023:   240.95
+  2024:   244.52
+  2025:   384.88
+
+Multi-year mean of the annual total: 419.77 mm/year
+Sum of the monthly climatology:      419.77 mm/year

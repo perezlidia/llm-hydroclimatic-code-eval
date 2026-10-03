@@ -1,0 +1,35 @@
+# English translation of results/logs/phase2/T3_log_gpt6astra.txt (original console output in Spanish; numbers unchanged)
+REGIONAL PRECIPITATION: 1981�2025
+Cells inside the polygon: 20,320
+Cells outside the polygon: 56,186
+Arithmetic spatial mean, without area weighting.
+
+MONTHLY CLIMATOLOGY (mm/month)
+January     :      21.32
+February    :      16.45
+March       :      10.57
+April       :       4.03
+May         :       2.06
+June        :      18.19
+July        :      80.87
+August      :      84.18
+September   :      71.97
+October     :      25.95
+November    :      16.17
+December    :      23.73
+
+ANNUAL TOTALS � FIRST 5 YEARS (mm/year)
+1981:     418.91
+1982:     379.27
+1983:     618.52
+1984:     619.71
+1985:     410.88
+
+ANNUAL TOTALS � LAST 5 YEARS (mm/year)
+2021:     382.25
+2022:     373.84
+2023:     230.12
+2024:     208.35
+2025:     351.67
+
+MULTI-YEAR MEAN 1981�2025: 375.48 mm/year

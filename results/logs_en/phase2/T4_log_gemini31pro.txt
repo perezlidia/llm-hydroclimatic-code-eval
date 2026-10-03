@@ -1,0 +1,17 @@
+# English translation of results/logs/phase2/T4_log_gemini31pro.txt (original console output in Spanish; numbers unchanged)
+✓ Verification successful: Spatiotemporal coordinates and dimensions are identical.
+
+============================================================
+  ANNUAL WATER BALANCE - FIRST 5 YEARS (Area mean)
+============================================================
+  • Year 1981: -1120.54 mm/year  -->  Deficit
+  • Year 1982: -1196.30 mm/year  -->  Deficit
+  • Year 1983:  -869.32 mm/year  -->  Deficit
+  • Year 1984:  -861.33 mm/year  -->  Deficit
+  • Year 1985: -1128.54 mm/year  -->  Deficit
+============================================================
+  GLOBAL MULTI-YEAR MEAN (1981 - 2025)
+============================================================
+  • Mean Balance: -1245.93 mm/year
+  • General Condition: Represents a regional water DEFICIT.
+

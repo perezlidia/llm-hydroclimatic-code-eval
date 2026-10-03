@@ -1,0 +1,14 @@
+# English translation of results/logs/phase2/T6_log_gemini31pro.txt (original console output in Spanish; numbers unchanged)
+--- STARTING SAFE-LOADING TESTS ---
+
+Running Case A: Nonexistent file...
+  ✅ CORRECTLY CAUGHT:
+     --> The specified file does not exist or the path is invalid: 'archivo_falso_1981_2025.nc'
+
+Running Case B: Text renamed to NetCDF...
+  ✅ CORRECTLY CAUGHT:
+     --> The file 'pet_noroeste_fake.nc' is not a valid NetCDF file or is corrupted. Technical detail: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'scipy', 'rasterio']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+
+--- END OF TESTS ---

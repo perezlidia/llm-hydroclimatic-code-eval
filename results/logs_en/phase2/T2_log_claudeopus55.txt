@@ -1,0 +1,40 @@
+# English translation of results/logs/phase2/T2_log_claudeopus55.txt (original console output in Spanish; numbers unchanged)
+====================================================================
+CLEANING REPORT - ppt_noroeste_shp_CORRUPTO_prueba_T2.nc
+====================================================================
+Grid: 540 time steps x 246 lat x 311 lon = 76506 cells
+Cells in the study area      : 19926
+Cells outside the polygon    : 56580 (not modified)
+--------------------------------------------------------------------
+Unexpected NaN values         : 0  (of which 0 came as sentinel/inf)
+Negative values               : 53460  (minimum = -49.900 mm)
+Total imputed values          : 53460
+--------------------------------------------------------------------
+Area cells with problems      : 99 of 19926 (0.5 %)
+   with missing NaN           : 0
+   with negatives             : 99
+Cell-month climatology without own data: 1188 filled with 3x3 neighbors, 0 with regional mean
+
+Cells with the most imputed values (max. 10):
+       lat         lon    NaN    neg
+   24.7292   -111.2708      0    540
+   27.5625   -109.3542      0    540
+   23.5208   -110.2292      0    540
+   27.5625   -114.0625      0    540
+   26.3958   -108.3542      0    540
+   24.5208   -107.7292      0    540
+   27.3542   -108.8542      0    540
+   24.0208   -107.0208      0    540
+   25.6875   -107.8125      0    540
+   26.3958   -112.5625      0    540
+
+====================================================================
+VERIFICATION
+====================================================================
+[OK] No NaN within the study area
+[OK] No negative values within the area
+[OK] Cells outside the polygon are still NoData
+[OK] Valid original values unchanged
+[OK] Study area identical before/after
+
+Clean file saved to: D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2\ppt_noroeste_shp_LIMPIO_T2.nc
