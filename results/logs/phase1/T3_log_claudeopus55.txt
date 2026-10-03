@@ -1,0 +1,32 @@
+Unidades declaradas en el archivo: mm
+
+Climatolog�a mensual 1981-2025 (promedio regional, mm/mes)
+  Ene:    21.22
+  Feb:    15.29
+  Mar:    10.68
+  Abr:     5.11
+  May:     5.32
+  Jun:    30.24
+  Jul:    94.12
+  Ago:    92.75
+  Sep:    74.86
+  Oct:    29.76
+  Nov:    16.99
+  Dic:    23.43
+
+Acumulado anual - primeros 5 a�os (mm/a�o)
+  1981:   513.06
+  1982:   423.43
+  1983:   575.63
+  1984:   654.82
+  1985:   492.01
+
+Acumulado anual - �ltimos 5 a�os (mm/a�o)
+  2021:   423.03
+  2022:   428.40
+  2023:   240.95
+  2024:   244.52
+  2025:   384.88
+
+Promedio multianual del acumulado anual: 419.77 mm/a�o
+Suma de la climatolog�a mensual:          419.77 mm/a�o

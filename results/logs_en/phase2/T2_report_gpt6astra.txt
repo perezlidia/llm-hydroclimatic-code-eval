@@ -1,0 +1,19 @@
+# English translation of results/logs/phase2/T2_report_gpt6astra.txt (original report in Spanish; numbers unchanged)
+Input: ppt_noroeste_shp_CORRUPTO_prueba_T2.nc
+Method: monthly climatology per cell.
+Spatial cells in the study area: 19926
+Spatial cells outside the polygon: 56580
+Cells in the area with problems: 99
+Initial unexpected NaN (records): 0
+Initial negatives (records): 53460
+Initial infinities (records; may include negatives): 0
+Unique initial invalid records: 53460
+Imputed records: 0
+Final unexpected NaN: 53460
+Final negatives: 0
+Final infinities: 0
+Pending records: 53460
+Cells with pending records: 99
+Exterior kept as NaN: True
+Original valid precipitation values kept: True
+INCOMPLETE CLEANING: there are no valid observations for some cell-month pairs. No file is saved as LIMPIO (clean). Another source or an explicit alternative method is required.

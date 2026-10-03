@@ -1,0 +1,61 @@
+
+(a) Archivo inexistente [prompt]  -> se espera: RECHAZAR
+  ChatGPT-6 Astra  rechaza_ok       [ErrorNetCDF] No existe el archivo: C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\no_existe.nc
+  Claude           rechaza_ok       [ArchivoNoEncontradoError] No se encontró el archivo 'C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\no_existe.nc'. Verifique la ruta (directorio de trabajo actual: 'D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2').
+  Gemini 3.1 Pro   rechaza_ok       [FileNotFoundError] El archivo especificado no existe o la ruta es inválida: 'C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\no_existe.nc'
+
+(b) Texto plano renombrado a .nc [prompt]  -> se espera: RECHAZAR
+  ChatGPT-6 Astra  rechaza_ok       [ErrorNetCDF] No se pudo abrir o leer 'texto.nc' como NetCDF climático. El contenido puede no ser NetCDF válido, estar incompleto o dañado, no ser accesible, o contener metadatos que no se pueden decodificar. Un archivo de texto renombrado a .nc no es un NetCDF.
+  Claude           rechaza_ok       [FormatoInvalidoError] El archivo 'texto.nc' no es un NetCDF válido: su contenido no corresponde a NetCDF-3 ni NetCDF-4/HDF5 (puede ser un archivo de otro tipo renombrado con extensión .nc).
+  Gemini 3.1 Pro   rechaza_fuga     [ValueError] El archivo 'texto.nc' no es un archivo NetCDF válido o está dañado. Detalle técnico: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'scipy', 'rasterio']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+
+(c) NetCDF-4 válido [control positivo]  -> se espera: ACEPTAR
+  ChatGPT-6 Astra  acepta_ok        [-] (archivo cargado)
+  Claude           acepta_ok        [-] (archivo cargado)
+  Gemini 3.1 Pro   acepta_ok        [-] (archivo cargado)
+
+(d) NetCDF-3 clásico válido [control positivo]  -> se espera: ACEPTAR
+  ChatGPT-6 Astra  acepta_ok        [-] (archivo cargado)
+  Claude           acepta_ok        [-] (archivo cargado)
+  Gemini 3.1 Pro   acepta_ok        [-] (archivo cargado)
+
+(e) Archivo real del estudio [control positivo]  -> se espera: ACEPTAR
+  ChatGPT-6 Astra  acepta_ok        [-] (archivo cargado)
+  Claude           acepta_ok        [-] (archivo cargado)
+  Gemini 3.1 Pro   acepta_ok        [-] (archivo cargado)
+
+(f) Archivo vacío (0 bytes)  -> se espera: RECHAZAR
+  ChatGPT-6 Astra  rechaza_ok       [ErrorNetCDF] No se pudo abrir o leer 'vacio.nc' como NetCDF climático. El contenido puede no ser NetCDF válido, estar incompleto o dañado, no ser accesible, o contener metadatos que no se pueden decodificar. Un archivo de texto renombrado a .nc no es un NetCDF.
+  Claude           rechaza_ok       [FormatoInvalidoError] El archivo 'vacio.nc' está vacío (0 bytes).
+  Gemini 3.1 Pro   rechaza_fuga     [ValueError] El archivo 'vacio.nc' no es un archivo NetCDF válido o está dañado. Detalle técnico: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'scipy', 'rasterio']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+
+(g) Carpeta con extensión .nc  -> se espera: RECHAZAR
+  ChatGPT-6 Astra  rechaza_ok       [ErrorNetCDF] La ruta no corresponde a un archivo: C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\carpeta.nc
+  Claude           rechaza_ok       [ArchivoNoEncontradoError] La ruta 'C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\carpeta.nc' existe pero no es un archivo (¿es un directorio?).
+  Gemini 3.1 Pro   rechaza_ok       [FileNotFoundError] El archivo especificado no existe o la ruta es inválida: 'C:\Users\Lidia\AppData\Local\Temp\t6_4suqzlc0\carpeta.nc'
+
+(h) NetCDF válido sin 'ppt' ni 'pet'  -> se espera: RECHAZAR
+  ChatGPT-6 Astra  rechaza_ok       [ErrorNetCDF] El archivo 'sin_variable.nc' no contiene ninguna variable de datos llamada 'ppt' o 'pet'. Variables encontradas: tmax.
+  Claude           rechaza_ok       [EstructuraInvalidaError] El archivo 'sin_variable.nc' no contiene ninguna de las variables esperadas ['ppt', 'pet']. Variables encontradas: ['tmax'].
+  Gemini 3.1 Pro   rechaza_ok       [ValueError] El archivo 'sin_variable.nc' no contiene ninguna variable climática esperada ('ppt' o 'pet'). Variables encontradas: ['tmax']
+
+(i) NetCDF válido sin dimensión 'time'  -> se espera: RECHAZAR
+  ChatGPT-6 Astra  rechaza_ok       [ErrorNetCDF] El archivo 'sin_time.nc' no tiene las dimensiones requeridas: time. Dimensiones encontradas: lat, lon.
+  Claude           rechaza_ok       [EstructuraInvalidaError] El archivo 'sin_time.nc' no tiene las dimensiones requeridas ['lat', 'lon', 'time']. Faltan: ['time']. Dimensiones encontradas: ['lat', 'lon'].
+  Gemini 3.1 Pro   rechaza_ok       [ValueError] El archivo 'sin_time.nc' no cumple con la estructura dimensional. Faltan las siguientes dimensiones: ['time']. Dimensiones encontradas: ['lon', 'lat']
+
+(j) NetCDF-4 truncado a la mitad  -> se espera: RECHAZAR
+  ChatGPT-6 Astra  rechaza_ok       [ErrorNetCDF] No se pudo abrir o leer 'truncado.nc' como NetCDF climático. El contenido puede no ser NetCDF válido, estar incompleto o dañado, no ser accesible, o contener metadatos que no se pueden decodificar. Un archivo de texto renombrado a .nc no es un NetCDF.
+  Claude           rechaza_fuga     [FormatoInvalidoError] El archivo 'truncado.nc' parece NetCDF pero no pudo abrirse (¿corrupto, truncado o falta el motor netCDF4/h5netcdf?). Detalle: OSError: [Errno -101] NetCDF: HDF error: 'C:\\Users\\Lidia\\AppData\\Local\\Temp\\t6_4suqzlc0\\truncado.nc'
+  Gemini 3.1 Pro   rechaza_fuga     [ValueError] El archivo 'truncado.nc' no es un archivo NetCDF válido o está dañado. Detalle técnico: [Errno -101] NetCDF: HDF error: 'C:\\Users\\Lidia\\AppData\\Local\\Temp\\t6_4suqzlc0\\truncado.nc'
+
+RESUMEN (correctos / casos)
+  ChatGPT-6 Astra  10/10 correctos; 0 con detalle interno expuesto
+  Claude           10/10 correctos; 1 con detalle interno expuesto
+  Gemini 3.1 Pro   10/10 correctos; 3 con detalle interno expuesto
+
+Figura guardada en D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2\figuras\fig6_T6_robustez.png

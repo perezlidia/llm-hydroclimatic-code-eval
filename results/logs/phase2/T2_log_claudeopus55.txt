@@ -1,0 +1,39 @@
+====================================================================
+REPORTE DE LIMPIEZA - ppt_noroeste_shp_CORRUPTO_prueba_T2.nc
+====================================================================
+Malla: 540 pasos de tiempo x 246 lat x 311 lon = 76506 celdas
+Celdas en el �rea de estudio : 19926
+Celdas fuera del pol�gono    : 56580 (no se modifican)
+--------------------------------------------------------------------
+Valores NaN inesperados       : 0  (de ellos 0 ven�an como centinela/inf)
+Valores negativos             : 53460  (m�nimo = -49.900 mm)
+Total de valores imputados    : 53460
+--------------------------------------------------------------------
+Celdas del �rea con problemas : 99 de 19926 (0.5 %)
+   con NaN faltantes          : 0
+   con negativos              : 99
+Climatolog�a celda-mes sin datos propios: 1188 completadas con vecinos 3x3, 0 con promedio regional
+
+Celdas con m�s valores imputados (m�x. 10):
+       lat         lon    NaN    neg
+   24.7292   -111.2708      0    540
+   27.5625   -109.3542      0    540
+   23.5208   -110.2292      0    540
+   27.5625   -114.0625      0    540
+   26.3958   -108.3542      0    540
+   24.5208   -107.7292      0    540
+   27.3542   -108.8542      0    540
+   24.0208   -107.0208      0    540
+   25.6875   -107.8125      0    540
+   26.3958   -112.5625      0    540
+
+====================================================================
+VERIFICACI�N
+====================================================================
+[OK] Sin NaN dentro del �rea de estudio
+[OK] Sin valores negativos dentro del �rea
+[OK] Celdas fuera del pol�gono siguen siendo NoData
+[OK] Valores originales v�lidos sin cambios
+[OK] �rea de estudio id�ntica antes/despu�s
+
+Archivo limpio guardado en: D:\2027-ARTICULOS\CAPITULO-SOFTWARE\SCRIPT_v2\ppt_noroeste_shp_LIMPIO_T2.nc
