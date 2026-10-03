@@ -33,7 +33,7 @@ Baja California Sur, Sonora and Sinaloa), in two exploratory phases:
 ```
 prompts/            Prompts of both phases in English (original Spanish text in prompts/original_spanish/)
 generated_code/     Scripts delivered by the models, unmodified (Spanish comments), plus repaired versions
-reference/          Reference implementations (Phase 1 Python, Phase 2 ArcMap/ArcPy)
+reference/          Phase 1 Python reference (Phase 2 ArcMap reference rasters are in the data package)
 evaluation/         Rubric and per-task scores
 verification/       Scripts written by the authors to verify the outputs and produce the figures
 results/logs/       Console output of every script run
