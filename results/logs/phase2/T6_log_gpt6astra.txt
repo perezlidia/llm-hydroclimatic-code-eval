@@ -1,8 +1,0 @@
-
-a) Archivo inexistente
-[OK] Error controlado: No existe el archivo: C:\Users\Lidia\AppData\Local\Temp\pruebas_netcdf_suhqoldz\archivo_que_no_existe.nc
-
-b) Texto plano con extensión .nc
-[OK] Error controlado: No se pudo abrir o leer 'texto_renombrado.nc' como NetCDF climático. El contenido puede no ser NetCDF válido, estar incompleto o dañado, no ser accesible, o contener metadatos que no se pueden decodificar. Un archivo de texto renombrado a .nc no es un NetCDF.
-
-Resultado: 2/2 pruebas correctas.
